@@ -23,9 +23,13 @@ Programa con finalidad de comparar la eficiencia de un algoritmo de búsqueda li
 2. **Instalación:**
 
 
-- Clona el repositorio: 'git clone https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/tree/main/IL355_P1_GarinGutierrezNicol%C3%A1sAlejandro'
-- Navega al directorio del proyecto: 'cd IL355_P1_GarinGutierrezNicolásAlejandro'
-- Instala las dependencias: 'pip install -r requirements.txt' 
+- Clona el repositorio: 
+``` python
+git clone https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/tree/main/IL355_P1_GarinGutierrezNicol%C3%A1sAlejandro
+```
+- Navega al directorio del proyecto: ```cd IL355_P1_GarinGutierrezNicolásAlejandro```
+- Instala las dependencias: 
+```pip install -r requirements.txt ```
 
 ## Ejecución
 
@@ -48,3 +52,4 @@ Programa con finalidad de comparar la eficiencia de un algoritmo de búsqueda li
 NOTA: Si requieres de resetear el proceso, presionar el botón esmeralda "Limpiar listas y resultados"
 #Cerrar el programa al terminar
 '''
+
