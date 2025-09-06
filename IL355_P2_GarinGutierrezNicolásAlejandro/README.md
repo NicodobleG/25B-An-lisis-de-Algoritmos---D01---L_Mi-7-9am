@@ -33,7 +33,7 @@ git clone https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-
 - Para ejecutar el script principal, usa el siguiente comando: `python main.py`
 
 2. **Ejemplos de uso**
-'''
+```
 #Al ejecutar el programa visualizaremos lo siguiente:
 
 ![Ejecutar](https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/main/IL355_P2_GarinGutierrezNicol%C3%A1sAlejandro/Funcionamiento/1.Al%20ejecutar%20el%20programa.png)
@@ -92,4 +92,4 @@ NOTA: antes del siguiente paso, es recomendable realizar varios ordenamientos de
 ![Graficar](https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/main/IL355_P2_GarinGutierrezNicol%C3%A1sAlejandro/Funcionamiento/8.%20Al%20graficar%20los%20tiempos%20recabados.png)
 
 #Cerrar el programa al terminar
-'''
+```
