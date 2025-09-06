@@ -35,7 +35,7 @@ git clone https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-
 2. **Ejemplos de uso**
 '''
 #Al ejecutar el programa visualizaremos lo siguiente:
-https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/main/IL355_P2_GarinGutierrezNicol%C3%A1sAlejandro/Funcionamiento/1.Al%20ejecutar%20el%20programa.png
+![Ejecutar](https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/main/IL355_P2_GarinGutierrezNicol%C3%A1sAlejandro/Funcionamiento/1.Al%20ejecutar%20el%20programa.png)
 #Dentro del campo situado a la derecha del botón "Cambiár No. Barras" introducir un número entero.
 #Presionaremos Cambiar No. Barras para determinar el número de barras a generar.
 https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/main/IL355_P2_GarinGutierrezNicol%C3%A1sAlejandro/Funcionamiento/2.Al%20cambiar%20el%20n%C3%BAmero%20de%20barras.gif
