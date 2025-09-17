@@ -13,7 +13,7 @@ tk.Label(root, text="X").grid(row=0, column=1)
 tk.Label(root, text="Y").grid(row=0, column=2)
 
 entries = []  # guardará (entry_x, entry_y)
-for i in range(5):
+for i in range(5): # función que abre posibilidad a expandir la cantidad de coordenadas ingresadas
     tk.Label(root, text=f"P{i+1}:").grid(row=i+1, column=0, padx=5, pady=5)
     ex = tk.Entry(root, width=10)
     ex.grid(row=i+1, column=1, padx=5)
@@ -29,7 +29,7 @@ def distancia(p1, p2):
 
 def calcular():
     puntos = []
-    for ex, ey in entries:
+    for ex, ey in entries: # cada _for ex, ey in entries_ recorre todas las entradas del grid
         try:
             x = float(ex.get())
             y = float(ey.get())
@@ -41,30 +41,30 @@ def calcular():
         print("Necesitas al menos 2 puntos válidos")
         return
 
-    min_dist = float("inf")
+    min_dist = float("inf") # tenemos un valor de comparación muy grande, para que jale el for de abajo así chido
     mejor = None
-    for i in range(len(puntos)):
-        for j in range(i+1, len(puntos)):
-            print("Puntos: "f"{puntos[i]} y {puntos[j]}")
+    for i in range(len(puntos)): # for anidado para comparar los puntos de uno por uno
+        for j in range(i+1, len(puntos)): # for para recorrer los puntos de uno por uno exceptuando el anterior
+            print("Puntos: "f"{puntos[i]} y {puntos[j]}") # Depuración
             d = distancia(puntos[i], puntos[j])
             if d < min_dist:
                 min_dist = d
                 mejor = (puntos[i], puntos[j])
 
-    print("Los puntos más cercanos son:", mejor, "con una distancia de", min_dist)
+    print("Los puntos más cercanos son:", mejor, "con una distancia de", min_dist) # Depuración
     P1.config(text = str(mejor[0]))
     P2.config(text = str(mejor[1]))
     Dist.config(text = str(min_dist))
 
 def llenar_random():
-    for ex, ey in entries:
+    for ex, ey in entries: # cada _for ex, ey in entries_ recorre todas las entradas del grid
         ex.delete(0, tk.END)
         ey.delete(0, tk.END)
         ex.insert(0, random.randint(0, 40))
         ey.insert(0, random.randint(0, 40))
 
 def limpiar():
-    for ex, ey in entries:
+    for ex, ey in entries: # cada _for ex, ey in entries_ recorre todas las entradas del grid
         ex.delete(0, tk.END)
         ey.delete(0, tk.END)
 
