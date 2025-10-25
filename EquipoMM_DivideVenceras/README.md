@@ -52,14 +52,14 @@ git clone https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-
 
 ![Derrota](https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/67186133cafee3aa278e8fc09e6a8f75ef4c7cc4/EquipoMM_DivideVenceras/img/4AB%20-%20Final%20de%20la%20partida.png)
 
-- Al presionar el botón **"Ok"** se mostrará una gráfica con los tiempos de respuesta por cantidad de movimientos disponibles para la IA, esto con fines comparativos:
+- Al presionar el botón **"Ok"** se mostrará una gráfica con los tiempos de respuesta por turno de la IA, esto con fines comparativos:
 
 - - Minimax:
 
-![Grafica Minimax](https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/67186133cafee3aa278e8fc09e6a8f75ef4c7cc4/EquipoMM_DivideVenceras/img/5MM%20-%20Tiempos%20de%20respuesta.jpg)
+![Grafica Minimax](https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/97f56c82d65d3073cb1347b954011d8f9f5567a2/EquipoMM_DivideVenceras/img/5MM%20-%20Tiempos%20de%20respuesta.jpg)
 
 - - Alpha-Beta prunning:
 
-![Grafica Minimax](https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/67186133cafee3aa278e8fc09e6a8f75ef4c7cc4/EquipoMM_DivideVenceras/img/5AB%20-%20Tiempos%20de%20respuesta.jpg)
+![Grafica Minimax](https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/97f56c82d65d3073cb1347b954011d8f9f5567a2/EquipoMM_DivideVenceras/img/5AB%20-%20Tiempos%20de%20respuesta.jpg)
 
 #Nota: El programa se cerrará automáticamente al presionar el botón **"Ok"**
