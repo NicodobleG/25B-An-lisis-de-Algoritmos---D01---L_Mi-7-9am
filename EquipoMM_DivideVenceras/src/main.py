@@ -1,6 +1,8 @@
 import pygame
 import copy
 import time
+import numpy as np
+from collections import defaultdict
 import matplotlib.pyplot as plt
 
 # --- CONFIGURACIÓN DE LA VENTANA ---
@@ -38,7 +40,7 @@ def create_board(): # Creación del tablero
 
 
 def draw_board(win, board, selected=None): # Dibuja el tablero y fichas actuales
-    win.fill(BLACK) # Pintamos el fondo de negro
+    #win.fill(BLACK) # Pintamos el fondo de negro
     for r in range(ROWS):
         for c in range(COLS):
             color = GREY if (r + c) % 2 else WHITE # Alternamos entre gris y blanco ne el tablero real
@@ -304,73 +306,113 @@ def main(ai_choice):
     turn = 1  # 1 = jugador, -1 = IA
     ia_times = []
 
-    while run:
-        clock.tick(30)
-        draw_board(WIN, board, selected)
+    while run:  # Bucle principal del juego, se ejecuta hasta que 'run' sea False
+        clock.tick(30)  # Limita el bucle a 30 iteraciones por segundo (control de FPS)
+        draw_board(WIN, board, selected)  # Dibuja el tablero y resalta la ficha seleccionada si hay
 
+        # Comprobamos si el juego ha terminado
         if is_terminal(board):
-            player_moves = get_all_moves(board, 1)
-            ai_moves = get_all_moves(board, -1)
+            player_moves = get_all_moves(board, 1)  # Movimientos posibles del jugador
+            ai_moves = get_all_moves(board, -1)  # Movimientos posibles de la IA
 
+            # Determinar el resultado del juego
             if not player_moves and ai_moves:
-                show_winner("¡Gana la IA!")
+                show_winner("¡Gana la IA!")  # El jugador no puede moverse
             elif not ai_moves and player_moves:
-                show_winner("¡Ganaste!")
+                show_winner("¡Ganaste!")  # La IA no puede moverse
             else:
-                show_winner("Empate")
+                show_winner("Empate")  # Ninguno puede moverse
 
-            run = False
-            continue
+            run = False  # Termina el bucle principal
+            continue  # Salta al siguiente ciclo, que no habrá porque run = False
 
-        if turn == -1:  # turno IA
-            start_time = time.time()
-            # Selección de IA
+        # Turno de la IA
+        if turn == -1:  # Si es el turno de la IA
+            num_moves = len(get_all_moves(board, -1))  # Contamos los movimientos posibles para análisis
+
+            start_time = time.time()  # Marca el inicio del cálculo de la IA
             if ai_choice == "alphabeta":
-                _, move = alpha_beta(board, 4, float('-inf'), float('inf'), False)
-            else:  # minimax
-                _, move = minimax(board, 4, True)
+                _, move = alpha_beta(board, 4, float('-inf'), float('inf'), False)  # IA con poda Alpha-Beta
+            else:
+                _, move = minimax(board, 4, True)  # IA con Minimax puro
+            end_time = time.time()  # Marca el final del cálculo
 
-            end_time = time.time()
-            elapsed_time = (end_time - start_time) * 1000
-            ia_times.append(elapsed_time)
+            elapsed_time = (end_time - start_time) * 1000  # Convertimos tiempo a milisegundos
+            ia_times.append((num_moves, elapsed_time))  # Guardamos cantidad de movimientos y tiempo
 
-            print(f"Tiempo de respuesta ({ai_choice}): {elapsed_time:.3f} ms")
+            print(f"Turno IA ({ai_choice}) - Movimientos posibles: {num_moves}, {elapsed_time:.3f} ms")
 
-            if move:
-                board = make_move(board, move)
-            turn = 1
-            continue
+            if move:  # Si la IA encontró un movimiento válido
+                board = make_move(board, move)  # Actualiza el tablero
+            turn = 1  # Cambia el turno al jugador
+            continue  # Pasa al siguiente ciclo del bucle
 
         # Manejo del jugador
-        for event in pygame.event.get():
+        for event in pygame.event.get():  # Revisa todos los eventos de Pygame
             if event.type == pygame.QUIT:
-                run = False
+                run = False  # Cierra el juego si se cierra la ventana
             elif turn == 1 and event.type == pygame.MOUSEBUTTONDOWN:
-                x, y = pygame.mouse.get_pos()
-                row, col = y // SQUARE_SIZE, x // SQUARE_SIZE
+                x, y = pygame.mouse.get_pos()  # Obtiene posición del clic
+                row, col = y // SQUARE_SIZE, x // SQUARE_SIZE  # Convierte a coordenadas de tablero
 
-                if selected:
-                    move = (selected, (row, col))
-                    if move in get_all_moves(board, 1):
-                        board = make_move(board, move)
-                        turn = -1
-                    selected = None
-                elif board[row][col] > 0:
-                    selected = (row, col)
+                if selected:  # Si ya había una ficha seleccionada
+                    move = (selected, (row, col))  # Movimiento candidato
+                    if move in get_all_moves(board, 1):  # Verifica si es un movimiento válido
+                        board = make_move(board, move)  # Aplica el movimiento
+                        turn = -1  # Cambia el turno a la IA
+                    selected = None  # Deselecciona la ficha
+                elif board[row][col] > 0:  # Si se clickeó una ficha propia
+                    selected = (row, col)  # Selecciona esa ficha
 
     # === Al finalizar el juego ===
     if ia_times:
+        # Agrupamos tiempos por número de movimientos
+        grouped = defaultdict(list)
+        for moves, time_ms in ia_times:
+            grouped[moves].append(time_ms)
+
+        # Calculamos promedio por cada cantidad de movimientos
+        moves_avg = []
+        times_avg = []
+        for moves in sorted(grouped.keys()):
+            avg_time = np.mean(grouped[moves])
+            moves_avg.append(moves)
+            times_avg.append(avg_time)
+
+        # Ajustamos la gráfica
+        smoothed_moves = []
+        smoothed_times = []
+        for i in range(len(moves_avg)):
+            smoothed_moves.append(moves_avg[i])
+            smoothed_times.append(times_avg[i])
+            if i < len(moves_avg) - 1 and moves_avg[i + 1] - moves_avg[i] > 1:
+                # interpolar valores faltantes
+                x_fill = np.arange(moves_avg[i] + 1, moves_avg[i + 1])
+                y_fill = np.linspace(times_avg[i], times_avg[i + 1], len(x_fill))
+                smoothed_moves.extend(x_fill)
+                smoothed_times.extend(y_fill)
+
+        # Graficamos la curva promedio
         plt.figure(figsize=(8, 4))
-        plt.plot(range(1, len(ia_times) + 1), ia_times, marker='o')
-        plt.title(f"Tiempos de respuesta de la IA ({ai_choice})")
-        plt.xlabel("Número de turno de la IA")
-        plt.ylabel("Tiempo (ms)")
+        plt.plot(smoothed_moves, smoothed_times, marker='o', linestyle='-', linewidth=2, color='blue')
+        plt.title(f"Complejidad temporal promedio IA ({ai_choice})")
+        plt.xlabel("Movimientos posibles (get_all_moves)")
+        plt.ylabel("Tiempo promedio (ms)")
         plt.grid(True)
+
+        plt.xlim(min(smoothed_moves) - 1, max(smoothed_moves) + 1)
         plt.show()
+
 
     pygame.quit()
 
+
+# Solo se ejecuta si este archivo se corre directamente (no si se importa como módulo)
 if __name__ == "__main__":
+    # Mostramos el menú de selección de IA y guardamos la elección del usuario
     ai_choice = menu()
+
+    # Si el usuario eligió una IA (Alpha-Beta o Minimax)
     if ai_choice:
+        # Iniciamos el juego con la IA seleccionada
         main(ai_choice)
