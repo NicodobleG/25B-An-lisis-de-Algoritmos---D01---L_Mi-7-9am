@@ -54,6 +54,7 @@ Aquí una muestra de cómo debe quedar el archivo comprimido:
 - Una vez generado un archivo comprimido, podremos utilizar el botón "Descomprimir" para realizar el proceso de descompresión:
 
 ![Descomprime](https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/9c111004e9363f10c6a1028de764b46bafb47991/EquipoMM_C%C3%B3digo%20Huffman/Funcionamiento/4.Descomprime.png)
+
 Al presionar el botón se mostrará una ventana que confirma el éxito de la operación.
 
 Aquí una muestra de cómo debe quedar el archivo descomprimido:
