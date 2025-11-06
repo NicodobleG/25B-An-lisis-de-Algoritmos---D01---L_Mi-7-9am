@@ -39,6 +39,7 @@ git clone https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-
 -  Una vez seleccionados el archivo de texto y la ruta de salida, se podrá presionar el botón "Comprimir" sin problema alguno:
 
 ![Comprime](https://github.com/NicodobleG/25B-An-lisis-de-Algoritmos---D01---L_Mi-7-9am/blob/9c111004e9363f10c6a1028de764b46bafb47991/EquipoMM_C%C3%B3digo%20Huffman/Funcionamiento/3.Comprime.png)
+
  Al presionar el botón se mostrará una ventana que confirma el éxito de la operación, adicionalmente debajo se mostrarán los siguientes datos:
  | Dato  |
 | ------------- | 
