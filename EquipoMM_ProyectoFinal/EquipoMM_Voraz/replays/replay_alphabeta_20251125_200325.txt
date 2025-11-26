@@ -1,0 +1,616 @@
+[Turno 1 - Jugador]
+Movimiento: (5, 2) -> (4, 3)
+Tablero:
+0 -1 0 -1 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 -1 0 -1 0 -1 0 -1
+0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 0
+1 0 0 0 1 0 1 0
+0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+
+[Turno 2 - IA]
+Movimiento: (2, 1) -> (3, 0)
+Movimientos posibles: 7
+Nodos explorados: 73
+Profundidad: 5
+Tiempo: 4.86 ms
+Tablero:
+0 -1 0 -1 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 0 0 -1 0 -1 0 -1
+-1 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 0
+1 0 0 0 1 0 1 0
+0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+
+[Turno 3 - Jugador]
+Movimiento: (4, 3) -> (3, 4)
+Tablero:
+0 -1 0 -1 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 0 0 -1 0 -1 0 -1
+-1 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 0
+1 0 0 0 1 0 1 0
+0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+
+[Turno 4 - IA]
+Movimiento: (2, 3) -> (4, 5)
+Movimientos posibles: 2
+Nodos explorados: 9
+Profundidad: 5
+Tiempo: 0.91 ms
+Tablero:
+0 -1 0 -1 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 0 0 0 0 -1 0 -1
+-1 0 0 0 0 0 0 0
+0 0 0 0 0 -1 0 0
+1 0 0 0 1 0 1 0
+0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+
+[Turno 5 - Jugador]
+Movimiento: (5, 4) -> (3, 6)
+Tablero:
+0 -1 0 -1 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 0 0 0 0 -1 0 -1
+-1 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0
+1 0 0 0 0 0 1 0
+0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+
+[Turno 6 - IA]
+Movimiento: (2, 5) -> (4, 7)
+Movimientos posibles: 2
+Nodos explorados: 35
+Profundidad: 5
+Tiempo: 1.99 ms
+Tablero:
+0 -1 0 -1 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 0 0 0 0 0 0 -1
+-1 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 -1
+1 0 0 0 0 0 1 0
+0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+
+[Turno 7 - Jugador]
+Movimiento: (5, 6) -> (4, 5)
+Tablero:
+0 -1 0 -1 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 0 0 0 0 0 0 -1
+-1 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 -1
+1 0 0 0 0 0 0 0
+0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+
+[Turno 8 - IA]
+Movimiento: (1, 0) -> (2, 1)
+Movimientos posibles: 9
+Nodos explorados: 168
+Profundidad: 5
+Tiempo: 10.58 ms
+Tablero:
+0 -1 0 -1 0 -1 0 -1
+0 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 -1
+-1 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 -1
+1 0 0 0 0 0 0 0
+0 1 0 1 0 1 0 1
+1 0 1 0 1 0 1 0
+
+[Turno 9 - Jugador]
+Movimiento: (6, 5) -> (5, 6)
+Tablero:
+0 -1 0 -1 0 -1 0 -1
+0 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 -1
+-1 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 -1
+1 0 0 0 0 0 1 0
+0 1 0 1 0 0 0 1
+1 0 1 0 1 0 1 0
+
+[Turno 10 - IA]
+Movimiento: (4, 7) -> (6, 5)
+Movimientos posibles: 1
+Nodos explorados: 23
+Profundidad: 5
+Tiempo: 1.41 ms
+Tablero:
+0 -1 0 -1 0 -1 0 -1
+0 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 -1
+-1 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 0
+1 0 0 0 0 0 0 0
+0 1 0 1 0 -1 0 1
+1 0 1 0 1 0 1 0
+
+[Turno 11 - Jugador]
+Movimiento: (7, 4) -> (5, 6)
+Tablero:
+0 -1 0 -1 0 -1 0 -1
+0 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 -1
+-1 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 0
+1 0 0 0 0 0 1 0
+0 1 0 1 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 12 - IA]
+Movimiento: (0, 1) -> (1, 0)
+Movimientos posibles: 8
+Nodos explorados: 108
+Profundidad: 5
+Tiempo: 7.08 ms
+Tablero:
+0 0 0 -1 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 -1
+-1 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 0
+1 0 0 0 0 0 1 0
+0 1 0 1 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 13 - Jugador]
+Movimiento: (4, 5) -> (3, 6)
+Tablero:
+0 0 0 -1 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 -1
+-1 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0
+1 0 0 0 0 0 1 0
+0 1 0 1 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 14 - IA]
+Movimiento: (2, 7) -> (4, 5)
+Movimientos posibles: 1
+Nodos explorados: 13
+Profundidad: 5
+Tiempo: 1.56 ms
+Tablero:
+0 0 0 -1 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 0
+-1 0 0 0 0 0 0 0
+0 0 0 0 0 -1 0 0
+1 0 0 0 0 0 1 0
+0 1 0 1 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 15 - Jugador]
+Movimiento: (5, 6) -> (3, 4)
+Tablero:
+0 0 0 -1 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 0
+-1 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0
+0 1 0 1 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 16 - IA]
+Movimiento: (1, 4) -> (2, 3)
+Movimientos posibles: 7
+Nodos explorados: 109
+Profundidad: 5
+Tiempo: 6.59 ms
+Tablero:
+0 0 0 -1 0 -1 0 -1
+-1 0 -1 0 0 0 -1 0
+0 -1 0 -1 0 0 0 0
+-1 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0
+0 1 0 1 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 17 - Jugador]
+Movimiento: (6, 3) -> (5, 4)
+Tablero:
+0 0 0 -1 0 -1 0 -1
+-1 0 -1 0 0 0 -1 0
+0 -1 0 -1 0 0 0 0
+-1 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 0
+1 0 0 0 1 0 0 0
+0 1 0 0 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 18 - IA]
+Movimiento: (2, 3) -> (4, 5)
+Movimientos posibles: 1
+Nodos explorados: 13
+Profundidad: 5
+Tiempo: 0.92 ms
+Tablero:
+0 0 0 -1 0 -1 0 -1
+-1 0 -1 0 0 0 -1 0
+0 -1 0 0 0 0 0 0
+-1 0 0 0 0 0 0 0
+0 0 0 0 0 -1 0 0
+1 0 0 0 1 0 0 0
+0 1 0 0 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 19 - Jugador]
+Movimiento: (5, 4) -> (3, 6)
+Tablero:
+0 0 0 -1 0 -1 0 -1
+-1 0 -1 0 0 0 -1 0
+0 -1 0 0 0 0 0 0
+-1 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0
+0 1 0 0 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 20 - IA]
+Movimiento: (0, 3) -> (1, 4)
+Movimientos posibles: 7
+Nodos explorados: 102
+Profundidad: 5
+Tiempo: 7.12 ms
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 0
+-1 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0
+0 1 0 0 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 21 - Jugador]
+Movimiento: (5, 0) -> (4, 1)
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 0
+-1 0 0 0 0 0 1 0
+0 1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 1 0 0 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 22 - IA]
+Movimiento: (3, 0) -> (5, 2)
+Movimientos posibles: 1
+Nodos explorados: 15
+Profundidad: 5
+Tiempo: 0.94 ms
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 0
+0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0
+0 0 -1 0 0 0 0 0
+0 1 0 0 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 23 - Jugador]
+Movimiento: (6, 1) -> (4, 3)
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 -1 0 -1 0 -1 0
+0 -1 0 0 0 0 0 0
+0 0 0 0 0 0 1 0
+0 0 0 1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 24 - IA]
+Movimiento: (1, 2) -> (2, 3)
+Movimientos posibles: 7
+Nodos explorados: 129
+Profundidad: 5
+Tiempo: 7.37 ms
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 0 0 -1 0 -1 0
+0 -1 0 -1 0 0 0 0
+0 0 0 0 0 0 1 0
+0 0 0 1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 1
+1 0 1 0 0 0 1 0
+
+[Turno 25 - Jugador]
+Movimiento: (7, 2) -> (6, 1)
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 0 0 -1 0 -1 0
+0 -1 0 -1 0 0 0 0
+0 0 0 0 0 0 1 0
+0 0 0 1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 1 0 0 0 0 0 1
+1 0 0 0 0 0 1 0
+
+[Turno 26 - IA]
+Movimiento: (1, 6) -> (2, 5)
+Movimientos posibles: 7
+Nodos explorados: 123
+Profundidad: 5
+Tiempo: 7.58 ms
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 0 0 -1 0 0 0
+0 -1 0 -1 0 -1 0 0
+0 0 0 0 0 0 1 0
+0 0 0 1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 1 0 0 0 0 0 1
+1 0 0 0 0 0 1 0
+
+[Turno 27 - Jugador]
+Movimiento: (6, 1) -> (5, 2)
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 0 0 -1 0 0 0
+0 -1 0 -1 0 -1 0 0
+0 0 0 0 0 0 1 0
+0 0 0 1 0 0 0 0
+0 0 1 0 0 0 0 0
+0 0 0 0 0 0 0 1
+1 0 0 0 0 0 1 0
+
+[Turno 28 - IA]
+Movimiento: (2, 5) -> (4, 7)
+Movimientos posibles: 1
+Nodos explorados: 28
+Profundidad: 5
+Tiempo: 1.49 ms
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 0 0 -1 0 0 0
+0 -1 0 -1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 -1
+0 0 1 0 0 0 0 0
+0 0 0 0 0 0 0 1
+1 0 0 0 0 0 1 0
+
+[Turno 29 - Jugador]
+Movimiento: (4, 3) -> (3, 4)
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 0 0 -1 0 0 0
+0 -1 0 -1 0 0 0 0
+0 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 -1
+0 0 1 0 0 0 0 0
+0 0 0 0 0 0 0 1
+1 0 0 0 0 0 1 0
+
+[Turno 30 - IA]
+Movimiento: (2, 3) -> (4, 5)
+Movimientos posibles: 1
+Nodos explorados: 33
+Profundidad: 5
+Tiempo: 1.84 ms
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 0 0 -1 0 0 0
+0 -1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 -1 0 -1
+0 0 1 0 0 0 0 0
+0 0 0 0 0 0 0 1
+1 0 0 0 0 0 1 0
+
+[Turno 31 - Jugador]
+Movimiento: (5, 2) -> (4, 3)
+Tablero:
+0 0 0 0 0 -1 0 -1
+-1 0 0 0 -1 0 0 0
+0 -1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 1 0 -1 0 -1
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 1
+1 0 0 0 0 0 1 0
+
+[Turno 32 - IA]
+Movimiento: (0, 5) -> (1, 6)
+Movimientos posibles: 9
+Nodos explorados: 115
+Profundidad: 5
+Tiempo: 8.61 ms
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 -1 0 -1 0
+0 -1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 1 0 -1 0 -1
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 1
+1 0 0 0 0 0 1 0
+
+[Turno 33 - Jugador]
+Movimiento: (6, 7) -> (5, 6)
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 -1 0 -1 0
+0 -1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 1 0 -1 0 -1
+0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0
+1 0 0 0 0 0 1 0
+
+[Turno 34 - IA]
+Movimiento: (4, 5) -> (6, 7)
+Movimientos posibles: 2
+Nodos explorados: 22
+Profundidad: 5
+Tiempo: 1.49 ms
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 -1 0 -1 0
+0 -1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 -1
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 -1
+1 0 0 0 0 0 1 0
+
+[Turno 35 - Jugador]
+Movimiento: (7, 6) -> (6, 5)
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 -1 0 -1 0
+0 -1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 -1
+0 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 -1
+1 0 0 0 0 0 0 0
+
+[Turno 36 - IA]
+Movimiento: (1, 4) -> (2, 3)
+Movimientos posibles: 8
+Nodos explorados: 77
+Profundidad: 5
+Tiempo: 5.54 ms
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 0 0 -1 0
+0 -1 0 -1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 -1
+0 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 -1
+1 0 0 0 0 0 0 0
+
+[Turno 37 - Jugador]
+Movimiento: (4, 3) -> (3, 2)
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 0 0 -1 0
+0 -1 0 -1 0 0 0 0
+0 0 1 0 0 0 0 0
+0 0 0 0 0 0 0 -1
+0 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 -1
+1 0 0 0 0 0 0 0
+
+[Turno 38 - IA]
+Movimiento: (2, 1) -> (4, 3)
+Movimientos posibles: 2
+Nodos explorados: 25
+Profundidad: 5
+Tiempo: 1.85 ms
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 0 0 -1 0
+0 0 0 -1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 -1 0 0 0 -1
+0 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 -1
+1 0 0 0 0 0 0 0
+
+[Turno 39 - Jugador]
+Movimiento: (7, 0) -> (6, 1)
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 0 0 -1 0
+0 0 0 -1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 -1 0 0 0 -1
+0 0 0 0 0 0 0 0
+0 1 0 0 0 1 0 -1
+0 0 0 0 0 0 0 0
+
+[Turno 40 - IA]
+Movimiento: (6, 7) -> (7, 6)
+Movimientos posibles: 9
+Nodos explorados: 84
+Profundidad: 5
+Tiempo: 6.71 ms
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 0 0 -1 0
+0 0 0 -1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 -1 0 0 0 -1
+0 0 0 0 0 0 0 0
+0 1 0 0 0 1 0 0
+0 0 0 0 0 0 -2 0
+
+[Turno 41 - Jugador]
+Movimiento: (6, 1) -> (5, 2)
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 0 0 -1 0
+0 0 0 -1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 -1 0 0 0 -1
+0 0 1 0 0 0 0 0
+0 0 0 0 0 1 0 0
+0 0 0 0 0 0 -2 0
+
+[Turno 42 - IA]
+Movimiento: (4, 3) -> (6, 1)
+Movimientos posibles: 2
+Nodos explorados: 14
+Profundidad: 5
+Tiempo: 1.12 ms
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 0 0 -1 0
+0 0 0 -1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 -1
+0 0 0 0 0 0 0 0
+0 -1 0 0 0 1 0 0
+0 0 0 0 0 0 -2 0
+
+[Turno 43 - Jugador]
+Movimiento: (6, 5) -> (5, 6)
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 0 0 -1 0
+0 0 0 -1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 -1
+0 0 0 0 0 0 1 0
+0 -1 0 0 0 0 0 0
+0 0 0 0 0 0 -2 0
+
+[Turno 44 - IA]
+Movimiento: (4, 7) -> (6, 5)
+Movimientos posibles: 1
+Nodos explorados: 1
+Profundidad: 2
+Tiempo: 0.08 ms
+Tablero:
+0 0 0 0 0 0 0 -1
+-1 0 0 0 0 0 -1 0
+0 0 0 -1 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 -1 0 0 0 -1 0 0
+0 0 0 0 0 0 -2 0
+
