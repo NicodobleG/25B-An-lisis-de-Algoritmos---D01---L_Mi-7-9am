@@ -1,4 +1,4 @@
-# Visualizador de metodos de Ordenamiento
+# Damas
 
 Programa con finalidad de visualizar la diferencia entre un algoritmo de fuerza bruta **(Minimax)** y otro divide y venceras **(Alpha-Beta Prunning)** en juegos de 2 jugadores modalidad 1 contra 1 con la utilización de **pygame** para jugar una partida de Damas.
 
